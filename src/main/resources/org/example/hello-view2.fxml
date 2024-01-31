@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<VBox alignment="CENTER" prefHeight="410.0" prefWidth="659.0" spacing="20.0" style="-fx-background-color: #dec871;" xmlns="http://javafx.com/javafx/17.0.6" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Client.Gui.Controler.HelloController">
+
+  <padding>
+    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+  </padding>
+   <children>
+      <AnchorPane prefHeight="367.0" prefWidth="589.0">
+         <children>
+
+            <Button fx:id="myStartGameButton" layoutX="349.0" layoutY="229.0" mnemonicParsing="false" onAction="#onClickStartGame" prefHeight="91.0" prefWidth="219.0" style="-fx-background-color: green;" text="Start game" textAlignment="CENTER" textOverrun="CLIP">
+               <font>
+                  <Font name="Book Antiqua Bold Italic" size="23.0" />
+               </font>
+            </Button>
+            <ChoiceBox fx:id="ChoiceBoxGameMode" layoutX="31.0" layoutY="32.0" prefWidth="150.0" />
+            <ChoiceBox fx:id="ChoiceBoxMapSize" layoutX="31.0" layoutY="92.0" prefWidth="150.0" />
+            <Label fx:id="LabelGameMode" layoutX="200.0" layoutY="32.0" prefHeight="25.0" prefWidth="219.0" text="Player vs Player">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="LabelMapSize" layoutX="200.0" layoutY="92.0" prefHeight="25.0" prefWidth="219.0" text="19 X 19">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
